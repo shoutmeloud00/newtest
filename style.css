@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: beige;
+    padding-top: 100px;
+}
+.preload-input{
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+.preload-total-money{
+    width: 100%;
+}
+.preload-total-money >.input{
+    margin-bottom: 10px;
+}
+.preload-money-per-day >.input{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+pre{
+    display: inline-block;
+}
+.btn-1{
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0 0 30px;
+}
+.box{
+    width: 30%;
+    margin: auto;
+    display: none;
+}
+.header{
+    padding: 15px;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: coral;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 15px;
+}
+.header-left{
+    width: 40%;
+}
+.header-left p{
+    font-size: 20px;
+}
+.input-balance{
+    width: 170px;
+    height: 50px;
+    margin-left: 40px;
+    font-size: 40px;
+    border: none;
+    background-color: coral;
+    color: white;
+}
+.header-right{
+    width: 40%;
+}
+.header-right img{
+    width: 40%;
+    margin: 15px 0 0 40% ;
+}
+.content{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 25px;
+    font-family: 'Cinzel', serif;
+}
+.content-header{
+    font-size: 16px;
+}
+.spent-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2px;
+}
+.day-spent{
+    width: 13%;
+    height: 30px;
+    text-align: center;
+}
+.graph{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-graph{
+    width: 12%;
+    height: 150px;
+    border: 2px solid black;
+}
+.days{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-day{
+    width: 12%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.footer{
+    padding: 15px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: coral;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.footer-left{
+    width: 40%;
+}
+.footer-left p{
+    font-size: 18px;
+}
+.input-spent{
+    width: 170px;
+    height: 50px;
+    margin-left: 40px;
+    font-size: 40px;
+    border: none;
+    background-color: coral;
+    color: white;
+}
+.footer-right{
+    width: 40%;
+}
+.footer-right img{
+    width: 120px;
+    margin-left: 40px;

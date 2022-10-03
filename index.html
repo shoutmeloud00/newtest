@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Expenses chart component</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="preload-input">
+      <div class="preload-total-money">
+        <span>Total Money</span>
+        <input type="number" class="input-total-money input" value="">
+      </div>
+      <div class="preload-money-per-day">
+        <pre>Mon</pre>
+        <input type="number" class="input-mon input" value=""><br/>
+        <pre>Tue</pre>
+        <input type="number" class="input-tue input" value=""><br/>
+        <pre>Wed</pre>
+        <input type="number" class="input-wed input" value=""><br/>
+        <pre>Thu</pre>
+        <input type="number" class="input-thu input" value=""><br/>
+        <pre>Fri</pre>
+        <input type="number" class="input-fri input" value=""><br/>
+        <pre>Sat</pre>
+        <input type="number" class="input-sat input" value=""><br/>
+        <pre>Sun</pre>
+        <input type="number" class="input-sun input" value=""><br/>
+      </div>
+      <button class="btn-1">Confirm</button>
+    </div>
+    <div class="box">
+      <div class="header">
+        <div class="header-left">
+          <p>My balance</p>
+          <input type="text" class="input-balance input" value="0" minlength="1" maxlength="7" disabled>
+        </div>
+        <div class="header-right">
+          <img src="./images/logo.svg" alt="">
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-header">
+          <h1>Spendings - Last 7 days</h1>
+        </div>
+        <div class="spent-row">
+          <div class="day-spent mon">
+            <span></span></div>
+          <div class="day-spent tue"><span></span></div>
+          <div class="day-spent wed"><span></span></div>
+          <div class="day-spent thu"><span></span></div>
+          <div class="day-spent fri"><span></span></div>
+          <div class="day-spent sat"><span></span></div>
+          <div class="day-spent sun"><span></span></div>
+        </div>
+        <div class="graph">
+          <div id="myPlot" style="width:100%;max-width:700px"></div>
+         <!--  <div class="box-graph b1"></div>
+          <div class="box-graph b2"></div>
+          <div class="box-graph b3"></div>
+          <div class="box-graph b4"></div>
+          <div class="box-graph b5"></div>
+          <div class="box-graph b6"></div>
+          <div class="box-graph b7"></div>-->
+        </div> 
+        
+        <div class="days">
+          <div class="box-day">Mon</div>
+          <div class="box-day">Tue</div>
+          <div class="box-day">Wed</div>
+          <div class="box-day">Thu</div>
+          <div class="box-day">Fri</div>
+          <div class="box-day">Sat</div>
+          <div class="box-day">Sun</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-left">
+          <p>Total for the month</p>
+          <input type="text" class="input-spent input" value="0" disabled>
+        </div>
+        <div class="footer-right">
+          <img src="./images/Visa_Inc.-Logo.wine.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+var xArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+var yArray = [];
+
+</script>
+<script src="./script.js"></script>
+
+</body>
+</html>
